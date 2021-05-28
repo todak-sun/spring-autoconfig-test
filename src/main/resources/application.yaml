@@ -1,0 +1,20 @@
+spring:
+  myconfig:
+    azure:
+      enable: true
+      servicebus:
+        queues:
+          - id: name
+            name: name
+            connection-string: 'queue-connection-string'
+        topics:
+          - id: name
+            name: name
+            connection-string: 'topic-connection-string'
+        subscriptions:
+          - id: name
+            name: name
+            connection-string: 'subscription-connection-string'
+      storage:
+        table:
+          connection-string: 'table-connection-string'
