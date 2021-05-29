@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportAware;
 import org.springframework.core.type.AnnotationMetadata;
 
-@Configuration(proxyBeanMethods = false)
-@ConditionalOnProperty(prefix = "spring.tradlinx.azure", name = "enable", havingValue = "true")
+@Configuration
+@ConditionalOnProperty(prefix = "spring.myconfig.azure", name = "enable", havingValue = "true")
 @EnableConfigurationProperties(AzureServicebusProperty.class)
 public class AzureServicebusConfigurationRegistrar implements ImportAware {
 
